@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CaseItau.API.Model;
-using Microsoft.AspNetCore.Http;
+﻿using CaseItau.API.Model;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.SQLite;
+using Microsoft.Data.Sqlite;
 
 namespace CaseItau.API.Controllers
 {
@@ -18,7 +13,7 @@ namespace CaseItau.API.Controllers
         public IEnumerable<Fundo> Get()
         {
             var lista = new List<Fundo>();
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
             cmd.CommandText = "SELECT F.*, T.NOME AS NOME_TIPO FROM FUNDO F INNER JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO";
@@ -31,7 +26,7 @@ namespace CaseItau.API.Controllers
                 f.Nome = reader[1].ToString();
                 f.Cnpj = reader[2].ToString();
                 f.CodigoTipo = int.Parse(reader[3].ToString());
-                f.Patrimonio = decimal.Parse(reader[4].ToString());
+                f.Patrimonio = reader[4] == DBNull.Value ? null : decimal.Parse(reader[4].ToString());
                 f.NomeTipo = reader[5].ToString();                
                 lista.Add(f);
             }
@@ -42,7 +37,7 @@ namespace CaseItau.API.Controllers
         [HttpGet("{codigo}", Name = "Get")]
         public Fundo Get(string codigo)
         {
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
             cmd.CommandText = "SELECT F.*, T.NOME AS NOME_TIPO FROM FUNDO F INNER JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO WHERE F.CODIGO = '" + codigo + "'";
@@ -66,7 +61,7 @@ namespace CaseItau.API.Controllers
         [HttpPost]
         public void Post([FromBody] Fundo value)
         {
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
             cmd.CommandText = "INSERT INTO FUNDO VALUES('" + value.Codigo + "','" + value.Nome + "','" + value.Cnpj + "',"+value.CodigoTipo.ToString() + ",NULL)";
@@ -78,7 +73,7 @@ namespace CaseItau.API.Controllers
         [HttpPut("{codigo}")]
         public void Put(string codigo, [FromBody] Fundo value)
         {
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
             cmd.CommandText = "UPDATE FUNDO SET Nome = '" + value.Nome + "', CNPJ = '" + value.Cnpj + "', CODIGO_TIPO = " + value.CodigoTipo + " WHERE CODIGO = '" + codigo + "'";
@@ -90,7 +85,7 @@ namespace CaseItau.API.Controllers
         [HttpDelete("{codigo}")]
         public void Delete(string codigo)
         {
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
             cmd.CommandText = "DELETE FROM FUNDO WHERE CODIGO = '" + codigo + "'";
@@ -101,10 +96,11 @@ namespace CaseItau.API.Controllers
         [HttpPut("{codigo}/patrimonio")]
         public void MovimentarPatrimonio(string codigo, [FromBody] decimal value)
         {
-            var con = new SQLiteConnection("Data Source=dbCaseItau.s3db");
+            var con = new SqliteConnection("Data Source=dbCaseItau.s3db");
             con.Open();
             var cmd = con.CreateCommand();
-            cmd.CommandText = "UPDATE FUNDO SET PATRIMONIO = IFNULL(PATRIMONIO,0) + " + value.ToString() + " WHERE CODIGO = '" + codigo + "'";
+            cmd.CommandText = "UPDATE FUNDO SET PATRIMONIO = IFNULL(PATRIMONIO,0) + " + value
+                .ToString(System.Globalization.CultureInfo.InvariantCulture) + " WHERE CODIGO = '" + codigo + "'";
             cmd.CommandType = System.Data.CommandType.Text;
             var resultado = cmd.ExecuteNonQuery();
         }
