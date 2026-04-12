@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 namespace CaseItau.API.Middlewares
