@@ -1,12 +1,11 @@
 ﻿using Application.Interfaces;
 using Domain.DTOs;
-using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CaseItau.API.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FundoController : ControllerBase

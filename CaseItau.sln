@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11626.88 stable
+VisualStudioVersion = 18.4.11626.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseItau.API", "CaseItau.API\CaseItau.API.csproj", "{3707953F-0288-465D-93BC-790A4E80D734}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{74AADCBA-4486-441D-AD3C-3497F86FAC07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{594A04DF-9CA5-4505-98B0-516F1C7FA67C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes", "Testes\Testes.csproj", "{77EC2C07-7922-46FE-9EAE-91DF78A4CD0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{594A04DF-9CA5-4505-98B0-516F1C7FA67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{594A04DF-9CA5-4505-98B0-516F1C7FA67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{594A04DF-9CA5-4505-98B0-516F1C7FA67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EC2C07-7922-46FE-9EAE-91DF78A4CD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EC2C07-7922-46FE-9EAE-91DF78A4CD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EC2C07-7922-46FE-9EAE-91DF78A4CD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EC2C07-7922-46FE-9EAE-91DF78A4CD0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
