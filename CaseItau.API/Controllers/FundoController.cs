@@ -1,10 +1,12 @@
-﻿using Application.DTOs;
-using Application.Interfaces;
+﻿using Application.Interfaces;
+using Domain.DTOs;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CaseItau.API.Controllers
 {
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FundoController : ControllerBase
@@ -29,18 +31,17 @@ namespace CaseItau.API.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] CriarFundoRequest request)
         {
-            var fundo = new Fundo(request.Codigo, request.Nome, request.Cnpj, request.CodigoTipo);
-            await _fundoService.CriarFundoAsync(fundo);
-            return CreatedAtAction(nameof(GetAsync), new { codigo = fundo.Codigo }, fundo);
+            var fundo = await _fundoService.CriarFundoAsync(request);
+            return Created($"/api/fundo/{fundo.Codigo}", fundo);
         }
 
         [HttpPut("{codigo}")]
         public async Task<IActionResult> PutAsync(string codigo, [FromBody] AtualizarFundoRequest request)
         {
-            var fundo = await _fundoService.BuscarPorCodigoAsync(codigo);
-            if (fundo is null) return NotFound();
-            fundo.Atualizar(request.Nome, request.Cnpj, request.CodigoTipo);
-            await _fundoService.AtualizarFundoAsync(fundo);
+            var existe = await _fundoService.BuscarPorCodigoAsync(codigo);
+            if (existe is null) return NotFound();
+
+            await _fundoService.AtualizarFundoAsync(codigo, request);
             return NoContent();
         }
 

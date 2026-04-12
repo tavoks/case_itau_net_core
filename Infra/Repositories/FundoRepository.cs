@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Domain.DTOs;
 using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.Data.Sqlite;
@@ -22,19 +23,27 @@ namespace Infra.Repositories
                 "WHERE CODIGO = @Codigo", fundo);
         }
 
-        public async Task<Fundo?> BuscarPorCodigoAsync(string codigo)
+        public async Task<FundoResponse?> BuscarPorCodigoAsync(string codigo)
         {
             using var conn = CriarConexao();
-            return await conn.QueryFirstOrDefaultAsync<Fundo>(
-                "SELECT F.*, T.NOME AS NOME_TIPO FROM FUNDO F " +
+            return await conn.QueryFirstOrDefaultAsync<FundoResponse>(
+                "SELECT F.CODIGO, F.NOME, F.CNPJ, " +
+                "F.CODIGO_TIPO AS CodigoTipo, " +
+                "ROUND(CAST(F.PATRIMONIO AS REAL), 2) AS PATRIMONIO, " +
+                "T.NOME AS NomeTipo " +
+                "FROM FUNDO F " +
                 "LEFT JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO " +
                 "WHERE F.CODIGO = @Codigo", new { Codigo = codigo });
         }
 
-        public async Task<IEnumerable<Fundo>> BuscarTodosAsync()
+        public async Task<IEnumerable<FundoResponse>> BuscarTodosAsync()
         {
             using var conn = CriarConexao();
-            return await conn.QueryAsync<Fundo>("SELECT F.*, T.NOME AS NOME_TIPO FROM FUNDO F " +
+            return await conn.QueryAsync<FundoResponse>(
+                "SELECT F.CODIGO, F.NOME, F.CNPJ, F.CODIGO_TIPO AS CodigoTipo, " +
+                "ROUND(CAST(F.PATRIMONIO AS REAL), 2) AS PATRIMONIO, " +
+                "T.NOME AS NomeTipo " +
+                "FROM FUNDO F " +
                 "LEFT JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO");
         }
 

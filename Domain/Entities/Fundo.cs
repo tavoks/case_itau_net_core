@@ -5,11 +5,11 @@ namespace Domain.Entities
 {
     public class Fundo
     {
-        public string Codigo { get; private set; }
-        public string Nome { get; private set; }
-        public string Cnpj { get; private set; }
+        public string Codigo { get; private set; } = string.Empty;
+        public string Nome { get; private set; } = string.Empty;
+        public string Cnpj { get; private set; } = string.Empty;
         public int CodigoTipo { get; private set; }
-        public decimal? Patrimonio { get; private set; }
+        public double? Patrimonio { get; private set; }
 
         protected Fundo() { }
 

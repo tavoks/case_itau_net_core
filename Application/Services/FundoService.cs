@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.DTOs;
 using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.Extensions.Caching.Memory;
@@ -16,9 +17,9 @@ namespace Application.Services
             _cache = cache;
         }
 
-        public async Task<IEnumerable<Fundo>> BuscarTodosAsync()
+        public async Task<IEnumerable<FundoResponse>> BuscarTodosAsync()
         {
-            if (_cache.TryGetValue(CacheKey, out IEnumerable<Fundo>? cached) && cached is not null)
+            if (_cache.TryGetValue(CacheKey, out IEnumerable<FundoResponse>? cached) && cached is not null)
                 return cached;
 
             var fundos = await _fundoRepository.BuscarTodosAsync();
@@ -26,19 +27,28 @@ namespace Application.Services
             return fundos;
         }
 
-        public async Task<Fundo?> BuscarPorCodigoAsync(string codigo)
+        public async Task<FundoResponse?> BuscarPorCodigoAsync(string codigo)
         {
             return await _fundoRepository.BuscarPorCodigoAsync(codigo);
         }
 
-        public async Task CriarFundoAsync(Fundo fundo)
+        public async Task<FundoResponse> CriarFundoAsync(CriarFundoRequest criarFundoRequest)
         {
+            var fundo = new Fundo(criarFundoRequest.Codigo, criarFundoRequest.Nome, criarFundoRequest.Cnpj, criarFundoRequest.CodigoTipo);
             await _fundoRepository.CriarFundoAsync(fundo);
             _cache.Remove(CacheKey);
+            return new FundoResponse
+            {
+                Codigo = fundo.Codigo,
+                Nome = fundo.Nome,
+                Cnpj = fundo.Cnpj,
+                CodigoTipo = fundo.CodigoTipo
+            };
         }
 
-        public async Task AtualizarFundoAsync(Fundo fundo)
+        public async Task AtualizarFundoAsync(string codigo, AtualizarFundoRequest atualizarFundoRequest)
         {
+            var fundo = new Fundo(codigo, atualizarFundoRequest.Nome, atualizarFundoRequest.Cnpj, atualizarFundoRequest.CodigoTipo);
             await _fundoRepository.AtualizarFundoAsync(fundo);
             _cache.Remove(CacheKey);
         }
