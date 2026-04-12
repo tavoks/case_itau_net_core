@@ -1,0 +1,30 @@
+2026-04-12 16:22:10.145 -03:00 [INF] User profile is available. Using 'C:\Users\AREK-GAMEPLAY\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-12 16:22:10.336 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/index.html - null null
+2026-04-12 16:22:10.390 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 16:22:10.390 -03:00 [INF] Hosting environment: Development
+2026-04-12 16:22:10.390 -03:00 [INF] Content root path: C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\CaseItau.API
+2026-04-12 16:22:10.588 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/index.html - 200 null text/html;charset=utf-8 262.0258ms
+2026-04-12 16:22:10.615 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/index.js - null null
+2026-04-12 16:22:10.615 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 16:22:10.617 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/index.js - 200 null application/javascript;charset=utf-8 3.4054ms
+2026-04-12 16:22:10.618 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 2.7827ms
+2026-04-12 16:22:10.637 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2026-04-12 16:22:10.673 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.089ms
+2026-04-12 16:22:10.716 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/v1/swagger.json - null null
+2026-04-12 16:22:10.725 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.6974ms
+2026-04-12 16:22:48.321 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44378/api/Auth/login - application/json 47
+2026-04-12 16:22:48.370 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.AuthController.Login (CaseItau.API)'
+2026-04-12 16:22:48.385 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller CaseItau.API.Controllers.AuthController (CaseItau.API).
+2026-04-12 16:22:48.448 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-12 16:22:48.452 -03:00 [INF] Executed action CaseItau.API.Controllers.AuthController.Login (CaseItau.API) in 63.964ms
+2026-04-12 16:22:48.452 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.AuthController.Login (CaseItau.API)'
+2026-04-12 16:22:48.454 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 84.2226 ms
+2026-04-12 16:22:48.455 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44378/api/Auth/login - 200 null application/json; charset=utf-8 134.0162ms
+2026-04-12 16:23:02.816 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-12 16:23:02.862 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-12 16:23:02.868 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-12 16:23:02.947 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-12 16:23:02.954 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 85.5039ms
+2026-04-12 16:23:02.954 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-12 16:23:02.954 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 91.6423 ms
+2026-04-12 16:23:02.954 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 137.8358ms
