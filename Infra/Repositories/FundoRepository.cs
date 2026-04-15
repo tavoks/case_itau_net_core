@@ -44,7 +44,7 @@ namespace Infra.Repositories
                 "ROUND(CAST(F.PATRIMONIO AS REAL), 2) AS PATRIMONIO, " +
                 "T.NOME AS NomeTipo " +
                 "FROM FUNDO F " +
-                "LEFT JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO");
+                "INNER JOIN TIPO_FUNDO T ON T.CODIGO = F.CODIGO_TIPO");
         }
 
         public async Task CriarFundoAsync(Fundo fundo)

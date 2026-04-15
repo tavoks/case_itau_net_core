@@ -1,0 +1,201 @@
+2026-04-15 12:06:07.871 -03:00 [INF] User profile is available. Using 'C:\Users\AREK-GAMEPLAY\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-15 12:06:08.251 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/index.html - null null
+2026-04-15 12:06:08.285 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-15 12:06:08.286 -03:00 [INF] Hosting environment: Development
+2026-04-15 12:06:08.286 -03:00 [INF] Content root path: C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\CaseItau.API
+2026-04-15 12:06:09.131 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/index.html - 200 null text/html;charset=utf-8 889.1295ms
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/index.css - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/index.js - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/_vs/browserLink - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/swagger-ui-bundle.js - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/swagger-ui.css - null null
+2026-04-15 12:06:09.165 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-15 12:06:09.175 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/index.js - 200 null application/javascript;charset=utf-8 17.8482ms
+2026-04-15 12:06:09.177 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript; charset=utf-8 21.6158ms
+2026-04-15 12:06:09.189 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-04-15 12:06:09.189 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/index.css - 200 202 text/css 35.798ms
+2026-04-15 12:06:09.194 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-15 12:06:09.195 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/swagger-ui.css - 200 152034 text/css 41.9482ms
+2026-04-15 12:06:09.197 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-15 12:06:09.199 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 45.7494ms
+2026-04-15 12:06:09.221 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-15 12:06:09.234 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.4867ms
+2026-04-15 12:06:09.243 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 82.0388ms
+2026-04-15 12:06:09.382 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/swagger/v1/swagger.json - null null
+2026-04-15 12:06:09.392 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4508ms
+2026-04-15 12:06:26.683 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44378/api/Auth/login - application/json 47
+2026-04-15 12:06:26.771 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.AuthController.Login (CaseItau.API)'
+2026-04-15 12:06:26.799 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller CaseItau.API.Controllers.AuthController (CaseItau.API).
+2026-04-15 12:06:26.869 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-15 12:06:26.874 -03:00 [INF] Executed action CaseItau.API.Controllers.AuthController.Login (CaseItau.API) in 71.6193ms
+2026-04-15 12:06:26.874 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.AuthController.Login (CaseItau.API)'
+2026-04-15 12:06:26.876 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 106.0995 ms
+2026-04-15 12:06:26.878 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44378/api/Auth/login - 200 null application/json; charset=utf-8 194.4578ms
+2026-04-15 12:06:35.448 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:06:35.463 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-15 12:06:35.468 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-15 12:06:35.469 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 401 null null 21.2756ms
+2026-04-15 12:06:39.700 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:06:39.748 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:06:39.759 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:06:40.236 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:06:40.247 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 488.2ms
+2026-04-15 12:06:40.247 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:06:40.247 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 498.9892 ms
+2026-04-15 12:06:40.247 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 547.1967ms
+2026-04-15 12:06:56.071 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:44378/api/Fundo/string/patrimonio - application/json 3
+2026-04-15 12:06:56.074 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API)'
+2026-04-15 12:06:56.083 -03:00 [INF] Route matched with {action = "MovimentarPatrimonio", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MovimentarPatrimonioAsync(System.String, System.Decimal) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:06:56.136 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-15 12:06:56.136 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API) in 53.3586ms
+2026-04-15 12:06:56.136 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API)'
+2026-04-15 12:06:56.136 -03:00 [INF] HTTP PUT /api/Fundo/string/patrimonio responded 204 in 61.9220 ms
+2026-04-15 12:06:56.136 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:44378/api/Fundo/string/patrimonio - 204 null null 65.8245ms
+2026-04-15 12:07:00.534 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:07:00.535 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:07:00.535 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:07:00.538 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:07:00.539 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 3.2137ms
+2026-04-15 12:07:00.539 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:07:00.539 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 3.9813 ms
+2026-04-15 12:07:00.539 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 5.7719ms
+2026-04-15 12:07:15.146 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:44378/api/Fundo/string/patrimonio - application/json 4
+2026-04-15 12:07:15.146 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API)'
+2026-04-15 12:07:15.147 -03:00 [INF] Route matched with {action = "MovimentarPatrimonio", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MovimentarPatrimonioAsync(System.String, System.Decimal) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:07:15.153 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-15 12:07:15.153 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API) in 5.9957ms
+2026-04-15 12:07:15.153 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.MovimentarPatrimonioAsync (CaseItau.API)'
+2026-04-15 12:07:15.153 -03:00 [INF] HTTP PUT /api/Fundo/string/patrimonio responded 204 in 6.4530 ms
+2026-04-15 12:07:15.153 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:44378/api/Fundo/string/patrimonio - 204 null null 7.5868ms
+2026-04-15 12:07:18.790 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:07:18.791 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:07:18.791 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:07:18.791 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:07:18.792 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 0.9634ms
+2026-04-15 12:07:18.792 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:07:18.792 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 1.3116 ms
+2026-04-15 12:07:18.792 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 2.5917ms
+2026-04-15 12:07:46.880 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:44378/api/Fundo/string - application/json 69
+2026-04-15 12:07:46.881 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:07:46.887 -03:00 [INF] Route matched with {action = "Put", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutAsync(System.String, Domain.DTOs.AtualizarFundoRequest) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:07:51.861 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API) in 4974.0691ms
+2026-04-15 12:07:51.862 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:07:51.863 -03:00 [ERR] HTTP PUT /api/Fundo/string responded 500 in 4981.7018 ms
+System.ArgumentException: CNPJ deve ter exatamente 14 dígitos., CodigoTipo deve ser maior que 0.
+   at Domain.Entities.Fundo.Validar[FundoValidator,Fundo](FundoValidator validator, Fundo entity) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Domain\Entities\Fundo.cs:line 31
+   at Domain.Entities.Fundo..ctor(String codigo, String nome, String cnpj, Int32 codigoTipo) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Domain\Entities\Fundo.cs:line 23
+   at Application.Services.FundoService.AtualizarFundoAsync(String codigo, AtualizarFundoRequest atualizarFundoRequest) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Application\Services\FundoService.cs:line 51
+   at CaseItau.API.Controllers.FundoController.PutAsync(String codigo, AtualizarFundoRequest request) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\CaseItau.API\Controllers\FundoController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-04-15 12:07:51.912 -03:00 [WRN] Erro de validaçãoÇ CNPJ deve ter exatamente 14 dígitos., CodigoTipo deve ser maior que 0.
+2026-04-15 12:07:51.914 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:44378/api/Fundo/string - 400 null application/json 5033.7951ms
+2026-04-15 12:08:07.662 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:44378/api/Fundo/string - application/json 70
+2026-04-15 12:08:07.663 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:08:07.663 -03:00 [INF] Route matched with {action = "Put", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutAsync(System.String, Domain.DTOs.AtualizarFundoRequest) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:10.478 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API) in 2815.0832ms
+2026-04-15 12:08:10.479 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:08:10.479 -03:00 [ERR] HTTP PUT /api/Fundo/string responded 500 in 2816.0263 ms
+System.ArgumentException: CodigoTipo deve ser maior que 0.
+   at Domain.Entities.Fundo.Validar[FundoValidator,Fundo](FundoValidator validator, Fundo entity) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Domain\Entities\Fundo.cs:line 31
+   at Domain.Entities.Fundo..ctor(String codigo, String nome, String cnpj, Int32 codigoTipo) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Domain\Entities\Fundo.cs:line 23
+   at Application.Services.FundoService.AtualizarFundoAsync(String codigo, AtualizarFundoRequest atualizarFundoRequest) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\Application\Services\FundoService.cs:line 51
+   at CaseItau.API.Controllers.FundoController.PutAsync(String codigo, AtualizarFundoRequest request) in C:\Users\AREK-GAMEPLAY\Documents\Codigo\caseItau\case_itau_net_core\CaseItau.API\Controllers\FundoController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-04-15 12:08:10.491 -03:00 [WRN] Erro de validaçãoÇ CodigoTipo deve ser maior que 0.
+2026-04-15 12:08:10.492 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:44378/api/Fundo/string - 400 null application/json 2829.8266ms
+2026-04-15 12:08:17.379 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:44378/api/Fundo/string - application/json 70
+2026-04-15 12:08:17.380 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:08:17.380 -03:00 [INF] Route matched with {action = "Put", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutAsync(System.String, Domain.DTOs.AtualizarFundoRequest) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:17.391 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-15 12:08:17.391 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API) in 10.3853ms
+2026-04-15 12:08:17.391 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.PutAsync (CaseItau.API)'
+2026-04-15 12:08:17.391 -03:00 [INF] HTTP PUT /api/Fundo/string responded 204 in 10.6681 ms
+2026-04-15 12:08:17.391 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:44378/api/Fundo/string - 204 null null 11.9222ms
+2026-04-15 12:08:21.286 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:08:21.287 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:08:21.287 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:21.287 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:08:21.288 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 0.8355ms
+2026-04-15 12:08:21.288 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:08:21.288 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 1.1229 ms
+2026-04-15 12:08:21.288 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 2.3465ms
+2026-04-15 12:08:38.248 -03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44378/api/Fundo/string - null null
+2026-04-15 12:08:38.249 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API)'
+2026-04-15 12:08:38.255 -03:00 [INF] Route matched with {action = "Delete", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAsync(System.String) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:38.289 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-15 12:08:38.289 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API) in 33.5631ms
+2026-04-15 12:08:38.289 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API)'
+2026-04-15 12:08:38.289 -03:00 [INF] HTTP DELETE /api/Fundo/string responded 204 in 39.8415 ms
+2026-04-15 12:08:38.289 -03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44378/api/Fundo/string - 204 null null 41.2907ms
+2026-04-15 12:08:43.757 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:08:43.758 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:08:43.758 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:43.759 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:08:43.759 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 1.0411ms
+2026-04-15 12:08:43.760 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:08:43.760 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 1.4780 ms
+2026-04-15 12:08:43.760 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 3.1614ms
+2026-04-15 12:08:54.573 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo/ITAUAC546 - null null
+2026-04-15 12:08:54.576 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAsync (CaseItau.API)'
+2026-04-15 12:08:54.583 -03:00 [INF] Route matched with {action = "Get", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAsync(System.String) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:08:54.585 -03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.DTOs.FundoResponse'.
+2026-04-15 12:08:54.586 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAsync (CaseItau.API) in 3.4824ms
+2026-04-15 12:08:54.586 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAsync (CaseItau.API)'
+2026-04-15 12:08:54.586 -03:00 [INF] HTTP GET /api/Fundo/ITAUAC546 responded 200 in 10.6532 ms
+2026-04-15 12:08:54.586 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo/ITAUAC546 - 200 null application/json; charset=utf-8 13.2562ms
+2026-04-15 12:09:15.032 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44378/api/Fundo - application/json 91
+2026-04-15 12:09:15.032 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.PostAsync (CaseItau.API)'
+2026-04-15 12:09:15.038 -03:00 [INF] Route matched with {action = "Post", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostAsync(Domain.DTOs.CriarFundoRequest) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:09:15.052 -03:00 [INF] Executing CreatedResult, writing value of type 'Domain.DTOs.FundoResponse'.
+2026-04-15 12:09:15.053 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.PostAsync (CaseItau.API) in 15.7504ms
+2026-04-15 12:09:15.054 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.PostAsync (CaseItau.API)'
+2026-04-15 12:09:15.054 -03:00 [INF] HTTP POST /api/Fundo responded 201 in 21.3560 ms
+2026-04-15 12:09:15.054 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44378/api/Fundo - 201 null application/json; charset=utf-8 22.1377ms
+2026-04-15 12:09:18.769 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:09:18.769 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:09:18.769 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:09:18.771 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:09:18.771 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 1.4412ms
+2026-04-15 12:09:18.771 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:09:18.771 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 1.7698 ms
+2026-04-15 12:09:18.771 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 2.48ms
+2026-04-15 12:09:28.785 -03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44378/api/Fundo/string - null null
+2026-04-15 12:09:28.786 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API)'
+2026-04-15 12:09:28.786 -03:00 [INF] Route matched with {action = "Delete", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAsync(System.String) on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:09:28.799 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-15 12:09:28.799 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API) in 12.301ms
+2026-04-15 12:09:28.799 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.DeleteAsync (CaseItau.API)'
+2026-04-15 12:09:28.799 -03:00 [INF] HTTP DELETE /api/Fundo/string responded 204 in 12.5370 ms
+2026-04-15 12:09:28.799 -03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44378/api/Fundo/string - 204 null null 13.7782ms
+2026-04-15 12:09:33.066 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44378/api/Fundo - null null
+2026-04-15 12:09:33.067 -03:00 [INF] Executing endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:09:33.067 -03:00 [INF] Route matched with {action = "GetAll", controller = "Fundo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller CaseItau.API.Controllers.FundoController (CaseItau.API).
+2026-04-15 12:09:33.067 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.DTOs.FundoResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-15 12:09:33.068 -03:00 [INF] Executed action CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API) in 0.7979ms
+2026-04-15 12:09:33.068 -03:00 [INF] Executed endpoint 'CaseItau.API.Controllers.FundoController.GetAllAsync (CaseItau.API)'
+2026-04-15 12:09:33.068 -03:00 [INF] HTTP GET /api/Fundo responded 200 in 1.0314 ms
+2026-04-15 12:09:33.068 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44378/api/Fundo - 200 null application/json; charset=utf-8 2.2733ms
